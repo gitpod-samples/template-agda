@@ -1,8 +1,8 @@
 # Learn more about this file at https://www.gitpod.io/docs/references/gitpod-yml
 tasks:
   - init: >
-       apt-get install agda-mode agda-stdlib
-       agda --compile hello-world.agda
+      sudo apt-get -y install agda agda-bin agda-mode agda-stdlib agda-stdlib-doc &&
+      agda --compile hello-world.agda
     command: ./hello-world
 github:
   prebuilds:
